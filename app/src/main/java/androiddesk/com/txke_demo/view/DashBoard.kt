@@ -11,7 +11,7 @@ import androiddesk.com.txke_demo.util.Uiutils
  * @author: lll
  * @date: 2019-04-18
  */
-class DathBoard @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr: Int = 0)
+class DashBoard @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr: Int = 0)
     : View(context, attributeSet, defStyleAttr) {
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -55,7 +55,7 @@ class DathBoard @JvmOverloads constructor(context: Context, attributeSet: Attrib
         //画椭圆
         canvas?.drawPath(path, paint)
 
-        //画仪表盘
+        //画仪表盘刻度
         paint.pathEffect = pathDashPathEffect
         canvas?.drawPath(path, paint)
         paint.pathEffect = null
