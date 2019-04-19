@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androiddesk.com.txke_demo.view.AvatarView
+    <androiddesk.com.txke_demo.view.SportView
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
