@@ -26,9 +26,6 @@ class SportView @JvmOverloads constructor(context: Context, attributeSet: Attrib
 
     init {
         paint.strokeWidth = Uiutils.dip2px(15f)
-        paint.style = Paint.Style.STROKE
-        paint.textAlign = Paint.Align.CENTER
-        paint.textSize = Uiutils.dip2px(100f)
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
@@ -40,6 +37,7 @@ class SportView @JvmOverloads constructor(context: Context, attributeSet: Attrib
         super.onDraw(canvas)
 
         //画圆
+        paint.style = Paint.Style.STROKE
         paint.color = Color.GRAY
         canvas?.drawOval(rectF, paint)
 
@@ -49,6 +47,8 @@ class SportView @JvmOverloads constructor(context: Context, attributeSet: Attrib
 
         val text = "abap"
         //话文字
+        paint.textAlign = Paint.Align.CENTER
+        paint.textSize = Uiutils.dip2px(100f)
         paint.style = Paint.Style.FILL
         paint.color = Color.GREEN
 //        val offset = (bounds.bottom + bounds.top) / 2f
