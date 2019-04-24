@@ -10,7 +10,7 @@
         android:layout_height="100dp"
         android:src="@mipmap/abc"/>-->
 
-    <androiddesk.com.txke_demo.view.CircleView
+    <androiddesk.com.txke_demo.view.CameraAnimView
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
