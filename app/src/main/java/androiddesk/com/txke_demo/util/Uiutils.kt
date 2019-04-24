@@ -1,6 +1,9 @@
 package androiddesk.com.txke_demo.util
 
 import android.content.res.Resources
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import androiddesk.com.txke_demo.R
 
 /**
  *@Description:
@@ -28,5 +31,19 @@ object Uiutils {
     fun sp2px(spValue: Float): Float {
         val fontScale = Resources.getSystem().displayMetrics.scaledDensity
         return spValue * fontScale + 0.5f
+    }
+
+    fun getAvatar(resources: Resources, width: Int): Bitmap {
+        val options = BitmapFactory.Options()
+        options.inJustDecodeBounds = true
+        BitmapFactory.decodeResource(resources, R.mipmap.banova_ic, options)
+        options.inJustDecodeBounds = false
+        options.inDensity = options.outWidth
+        options.inTargetDensity = width
+        return BitmapFactory.decodeResource(resources, R.mipmap.banova_ic, options)
+    }
+
+    fun getZLocation(): Float {
+        return -6 * Resources.getSystem().displayMetrics.density
     }
 }

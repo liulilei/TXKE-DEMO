@@ -4,7 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androiddesk.com.txke_demo.view.SportView
+    <!--<ImageView
+        android:id="@+id/view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/abc"/>-->
+
+    <androiddesk.com.txke_demo.view.CircleView
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
