@@ -1,12 +1,9 @@
 package androiddesk.com.txke_demo
 
-import android.animation.ObjectAnimator
 import android.animation.TypeEvaluator
 import android.graphics.PointF
 import android.os.Bundle
-import androiddesk.com.txke_demo.util.ProvinceUtil
 import androidx.fragment.app.FragmentActivity
-import kotlinx.android.synthetic.main.activity_test_view.*
 
 /**
  *@Description:
@@ -51,10 +48,10 @@ class TestViewActivity : FragmentActivity() {
 //        objectAnimator.duration = 1000
 //        objectAnimator.start()
 
-        val objectAnimator = ObjectAnimator.ofObject(view, "province", ProvinceUtil.ProvinceEvaluator(), "澳门特别行政区")
-        objectAnimator.startDelay = 1000
-        objectAnimator.duration = 5000
-        objectAnimator.start()
+//        val objectAnimator = ObjectAnimator.ofObject(view, "province", ProvinceUtil.ProvinceEvaluator(), "澳门特别行政区")
+//        objectAnimator.startDelay = 1000
+//        objectAnimator.duration = 5000
+//        objectAnimator.start()
 
     }
 

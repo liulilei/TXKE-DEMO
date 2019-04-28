@@ -10,9 +10,9 @@
         android:layout_height="100dp"
         android:src="@mipmap/abc"/>-->
 
-    <androiddesk.com.txke_demo.view.ProvinceView
+    <androiddesk.com.txke_demo.view.DrawableView
         android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="200dp"
+        android:layout_height="300dp" />
 
 </LinearLayout>
