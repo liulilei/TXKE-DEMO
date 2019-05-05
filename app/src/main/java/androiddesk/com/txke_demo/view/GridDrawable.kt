@@ -43,7 +43,7 @@ class GridDrawable : Drawable() {
         return paint.alpha
     }
 
-    //设置不透明度
+    //设置不透明度  透明度
     override fun getOpacity(): Int {
         return when (paint.alpha) {
             0xff -> PixelFormat.OPAQUE //不透明
