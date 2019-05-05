@@ -7,7 +7,7 @@ import android.graphics.Paint
 import android.graphics.RectF
 import android.util.AttributeSet
 import android.view.View
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -19,9 +19,9 @@ class PieChart @JvmOverloads constructor(context: Context, attributeSet: Attribu
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
-    private val radius = Uiutils.dip2px(150f)
+    private val radius = UiUtils.dip2px(150f)
 
-    private val length = Uiutils.dip2px(20f)
+    private val length = UiUtils.dip2px(20f)
 
     private val rectF = RectF()
 

@@ -7,7 +7,7 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.util.AttributeSet
 import android.view.View
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -21,11 +21,11 @@ class TestDrawLineView @JvmOverloads constructor(context: Context, attributeSet:
 
     private val path = Path()
 
-    private val radius = Uiutils.dip2px(100f)
+    private val radius = UiUtils.dip2px(100f)
 
     init {
         paint.color = Color.RED
-        paint.strokeWidth = Uiutils.dip2px(2f)
+        paint.strokeWidth = UiUtils.dip2px(2f)
         paint.style = Paint.Style.FILL
     }
 

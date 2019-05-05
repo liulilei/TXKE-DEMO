@@ -2,7 +2,7 @@ package androiddesk.com.txke_demo.view
 
 import android.graphics.*
 import android.graphics.drawable.Drawable
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -19,19 +19,19 @@ class GridDrawable : Drawable() {
 
     init {
         paint.apply {
-            strokeWidth = Uiutils.dip2px(3f)
+            strokeWidth = UiUtils.dip2px(3f)
             color = Color.RED
         }
     }
 
     override fun draw(canvas: Canvas) {
-        val width = (bounds.right - (widthLenght) * Uiutils.dip2px(3f)) / widthLenght
-        val height = (bounds.bottom - (heightCount) * Uiutils.dip2px(3f)) / heightCount
+        val width = (bounds.right - (widthLenght) * UiUtils.dip2px(3f)) / widthLenght
+        val height = (bounds.bottom - (heightCount) * UiUtils.dip2px(3f)) / heightCount
         for (i in 0..widthLenght) {
-            canvas.drawLine(i * width + i * Uiutils.dip2px(3f), bounds.top.toFloat(), i * width + i * Uiutils.dip2px(3f), bounds.bottom.toFloat(), paint)
+            canvas.drawLine(i * width + i * UiUtils.dip2px(3f), bounds.top.toFloat(), i * width + i * UiUtils.dip2px(3f), bounds.bottom.toFloat(), paint)
         }
         for (i in 0..heightCount) {
-            canvas.drawLine(bounds.left.toFloat(), i * height + i * Uiutils.dip2px(3f), bounds.right.toFloat(), i * height + i * Uiutils.dip2px(3f), paint)
+            canvas.drawLine(bounds.left.toFloat(), i * height + i * UiUtils.dip2px(3f), bounds.right.toFloat(), i * height + i * UiUtils.dip2px(3f), paint)
         }
     }
 

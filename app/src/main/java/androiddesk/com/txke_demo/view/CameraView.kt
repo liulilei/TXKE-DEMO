@@ -7,7 +7,7 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -19,18 +19,18 @@ class CameraView @JvmOverloads constructor(context: Context, attributeSet: Attri
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
-    private val padding = Uiutils.dip2px(100f)
+    private val padding = UiUtils.dip2px(100f)
 
-    private val width = Uiutils.dip2px(200f)
+    private val width = UiUtils.dip2px(200f)
 
     private val camera = Camera()
 
     private var avatar: Bitmap? = null
 
     init {
-        avatar = Uiutils.getAvatar(resources, width.toInt())
+        avatar = UiUtils.getAvatar(resources, width.toInt())
         camera.rotateX(45f)
-        camera.setLocation(0f, 0f, Uiutils.getZLocation())
+        camera.setLocation(0f, 0f, UiUtils.getZLocation())
     }
 
     override fun onDraw(canvas: Canvas?) {

@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -16,7 +16,7 @@ class SportView @JvmOverloads constructor(context: Context, attributeSet: Attrib
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
-    private val radius = Uiutils.dip2px(150f)
+    private val radius = UiUtils.dip2px(150f)
 
     private val rectF: RectF = RectF()
 
@@ -25,7 +25,7 @@ class SportView @JvmOverloads constructor(context: Context, attributeSet: Attrib
     private val metrics = Paint.FontMetrics()
 
     init {
-        paint.strokeWidth = Uiutils.dip2px(15f)
+        paint.strokeWidth = UiUtils.dip2px(15f)
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
@@ -48,7 +48,7 @@ class SportView @JvmOverloads constructor(context: Context, attributeSet: Attrib
         val text = "abap"
         //话文字
         paint.textAlign = Paint.Align.CENTER
-        paint.textSize = Uiutils.dip2px(100f)
+        paint.textSize = UiUtils.dip2px(100f)
         paint.style = Paint.Style.FILL
         paint.color = Color.GREEN
 //        val offset = (bounds.bottom + bounds.top) / 2f
@@ -62,7 +62,7 @@ class SportView @JvmOverloads constructor(context: Context, attributeSet: Attrib
         canvas?.drawText(text, -bounds.left.toFloat(), -bounds.top.toFloat(), paint)
 
         //左对齐
-        paint.textSize = Uiutils.dip2px(30f)
+        paint.textSize = UiUtils.dip2px(30f)
         paint.getTextBounds(text, 0, text.length, bounds)
         canvas?.drawText(text, -bounds.left.toFloat(), -bounds.top + paint.fontSpacing, paint)
     }

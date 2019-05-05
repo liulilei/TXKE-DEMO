@@ -10,7 +10,7 @@ import androiddesk.com.txke_demo.R
  * @author: lll
  * @date: 2019-04-18
  */
-object Uiutils {
+object UiUtils {
 
     /**
      * 根据手机的分辨率从 dp 的单位 转成为 px(像素)

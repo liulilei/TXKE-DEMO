@@ -6,7 +6,7 @@ import android.text.TextPaint
 import android.util.AttributeSet
 import android.view.View
 import androiddesk.com.txke_demo.R
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -21,8 +21,8 @@ class ImageTextView @JvmOverloads constructor(context: Context, attributeSet: At
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
     private val textPaint = TextPaint(Paint.ANTI_ALIAS_FLAG)
 
-    private val width = Uiutils.dip2px(200f)
-    private val padding = Uiutils.dip2px(80f)
+    private val width = UiUtils.dip2px(200f)
+    private val padding = UiUtils.dip2px(80f)
 
     private var bitmap: Bitmap? = null
 
@@ -33,8 +33,8 @@ class ImageTextView @JvmOverloads constructor(context: Context, attributeSet: At
     private val metrics = Paint.FontMetrics()
 
     init {
-        paint.textSize = Uiutils.dip2px(20f)
-        textPaint.textSize = Uiutils.dip2px(20f)
+        paint.textSize = UiUtils.dip2px(20f)
+        textPaint.textSize = UiUtils.dip2px(20f)
         bitmap = getAvatar(width.toInt())
         paint.getFontMetrics(metrics)
     }

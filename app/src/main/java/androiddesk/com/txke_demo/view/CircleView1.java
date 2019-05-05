@@ -9,7 +9,7 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import androiddesk.com.txke_demo.util.Uiutils;
+import androiddesk.com.txke_demo.util.UiUtils;
 
 /**
  * @Description:
@@ -23,7 +23,7 @@ public class CircleView1 extends View {
 
     private Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-    private float radius = Uiutils.INSTANCE.dip2px(50f);
+    private float radius = UiUtils.INSTANCE.dip2px(50f);
 
     public float getRadius() {
         Log.e("get1", radius + "");

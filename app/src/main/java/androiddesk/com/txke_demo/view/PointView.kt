@@ -6,7 +6,7 @@ import android.graphics.Paint
 import android.graphics.PointF
 import android.util.AttributeSet
 import android.view.View
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -25,7 +25,7 @@ class PointView @JvmOverloads constructor(context: Context, attributeSet: Attrib
         }
 
     init {
-        paint.strokeWidth = Uiutils.dip2px(10f)
+        paint.strokeWidth = UiUtils.dip2px(10f)
         paint.strokeCap = Paint.Cap.ROUND
     }
 

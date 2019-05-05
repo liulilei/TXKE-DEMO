@@ -5,7 +5,7 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -17,7 +17,7 @@ class CircleView @JvmOverloads constructor(context: Context, attributeSet: Attri
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
-    var radius = Uiutils.dip2px(50f)
+    var radius = UiUtils.dip2px(50f)
         set(value) {
             field = value
             invalidate()

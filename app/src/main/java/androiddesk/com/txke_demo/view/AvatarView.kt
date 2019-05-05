@@ -5,7 +5,7 @@ import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import androiddesk.com.txke_demo.R
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -17,11 +17,11 @@ class AvatarView @JvmOverloads constructor(context: Context, attributeSet: Attri
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
-    private val padding = Uiutils.dip2px(40f)
+    private val padding = UiUtils.dip2px(40f)
 
-    private val length = Uiutils.dip2px(10f)
+    private val length = UiUtils.dip2px(10f)
 
-    private val width = Uiutils.dip2px(200f)
+    private val width = UiUtils.dip2px(200f)
 
     private val rectF = RectF()
 

@@ -16,6 +16,8 @@ class TestViewActivity : FragmentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test_view)
 
+//        view.setUseFloatLabel(false)
+
 //        view.animate()
 //                .translationX(Uiutils.dip2px(150f))
 //                .translationY(Uiutils.dip2px(150f))

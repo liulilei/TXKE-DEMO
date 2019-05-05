@@ -5,7 +5,7 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -24,7 +24,7 @@ class ProvinceView @JvmOverloads constructor(context: Context, attributeSet: Att
         }
 
     init {
-        paint.textSize = Uiutils.dip2px(30f)
+        paint.textSize = UiUtils.dip2px(30f)
         paint.textAlign = Paint.Align.CENTER
     }
 

@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -16,7 +16,7 @@ class DashBoard @JvmOverloads constructor(context: Context, attributeSet: Attrib
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
-    private val radius = Uiutils.dip2px(150f)
+    private val radius = UiUtils.dip2px(150f)
 
     private var rectF: RectF? = null
 
@@ -30,12 +30,12 @@ class DashBoard @JvmOverloads constructor(context: Context, attributeSet: Attrib
 
     private var pathMeasure: PathMeasure? = null
 
-    private val length = Uiutils.dip2px(100f)
+    private val length = UiUtils.dip2px(100f)
 
     init {
         paint.style = Paint.Style.STROKE
         paint.color = Color.RED
-        paint.strokeWidth = Uiutils.dip2px(2f)
+        paint.strokeWidth = UiUtils.dip2px(2f)
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
@@ -45,8 +45,8 @@ class DashBoard @JvmOverloads constructor(context: Context, attributeSet: Attrib
         pathMeasure = PathMeasure(path, false)
         //设置paint的虚线特殊效果画圆  刻度
         if (pathDashPathEffect == null) {
-            dash.addRect(0f, 0f, Uiutils.dip2px(2f), Uiutils.dip2px(10f), Path.Direction.CW)
-            pathDashPathEffect = PathDashPathEffect(dash, (pathMeasure?.length!! - Uiutils.dip2px(2f)) / 20, 0f, PathDashPathEffect.Style.ROTATE)
+            dash.addRect(0f, 0f, UiUtils.dip2px(2f), UiUtils.dip2px(10f), Path.Direction.CW)
+            pathDashPathEffect = PathDashPathEffect(dash, (pathMeasure?.length!! - UiUtils.dip2px(2f)) / 20, 0f, PathDashPathEffect.Style.ROTATE)
         }
     }
 

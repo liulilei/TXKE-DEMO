@@ -7,7 +7,7 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import androiddesk.com.txke_demo.util.Uiutils
+import androiddesk.com.txke_demo.util.UiUtils
 
 /**
  *@Description:
@@ -19,9 +19,9 @@ class CameraAnimView @JvmOverloads constructor(context: Context, attributeSet: A
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
-    private val WIDTH = Uiutils.dip2px(200f)
+    private val WIDTH = UiUtils.dip2px(200f)
 
-    private val padding = Uiutils.dip2px(100f)
+    private val padding = UiUtils.dip2px(100f)
 
     private val camera = Camera()
 
@@ -46,8 +46,8 @@ class CameraAnimView @JvmOverloads constructor(context: Context, attributeSet: A
         }
 
     init {
-        bitmap = Uiutils.getAvatar(resources, WIDTH.toInt())
-        camera.setLocation(0f, 0f, Uiutils.getZLocation())
+        bitmap = UiUtils.getAvatar(resources, WIDTH.toInt())
+        camera.setLocation(0f, 0f, UiUtils.getZLocation())
     }
 
     override fun onDraw(canvas: Canvas?) {
