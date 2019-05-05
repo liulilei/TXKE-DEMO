@@ -2,12 +2,9 @@ package androiddesk.com.txke_demo.view
 
 import android.content.Context
 import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.Paint
-import android.graphics.drawable.ColorDrawable
 import android.util.AttributeSet
 import android.view.View
-import androiddesk.com.txke_demo.util.Uiutils
 
 /**
  *@Description:
@@ -19,7 +16,7 @@ class DrawableView @JvmOverloads constructor(context: Context, attributeSet: Att
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
-    private val drawable = ColorDrawable(Color.RED)
+    private val drawable = GridDrawable()
 
     init {
 
@@ -27,8 +24,10 @@ class DrawableView @JvmOverloads constructor(context: Context, attributeSet: Att
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        drawable.setBounds(Uiutils.dip2px(100f).toInt(), Uiutils.dip2px(150f).toInt(), width, height)
-        drawable.draw(canvas)
+        drawable.setBounds(0, 0, width, height)
+        if (canvas != null) {
+            drawable.draw(canvas)
+        }
 
     }
 

@@ -27,6 +27,7 @@ public class CircleView1 extends View {
 
     public float getRadius() {
         Log.e("get1", radius + "");
+        int i =  0xff;
         return radius;
     }
 
