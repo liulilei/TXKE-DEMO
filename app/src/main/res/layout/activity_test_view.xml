@@ -34,13 +34,18 @@
             app:use_float_label="true" />
     </FrameLayout>-->
 
-    <androiddesk.com.txke_demo.view.SquareImageView
+    <!--<androiddesk.com.txke_demo.view.SquareImageView
             android:layout_width="400dp"
             android:layout_height="200dp"
             android:src="@mipmap/banova"/>
 
     <View android:layout_width="300dp"
           android:layout_height="200dp"
-          android:background="@color/colorPrimaryDark"/>
+          android:background="@color/colorPrimaryDark"/>-->
+
+    <androiddesk.com.txke_demo.view.CircleMeasureView
+            android:background="@android:color/black"
+            android:layout_width="200dp"
+            android:layout_height="300dp"/>
 
 </LinearLayout>
