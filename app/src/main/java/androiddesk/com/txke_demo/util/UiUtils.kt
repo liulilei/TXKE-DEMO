@@ -36,11 +36,11 @@ object UiUtils {
     fun getAvatar(resources: Resources, width: Int): Bitmap {
         val options = BitmapFactory.Options()
         options.inJustDecodeBounds = true
-        BitmapFactory.decodeResource(resources, R.mipmap.banova_ic, options)
+        BitmapFactory.decodeResource(resources, R.mipmap.abc, options)
         options.inJustDecodeBounds = false
         options.inDensity = options.outWidth
         options.inTargetDensity = width
-        return BitmapFactory.decodeResource(resources, R.mipmap.banova_ic, options)
+        return BitmapFactory.decodeResource(resources, R.mipmap.abc, options)
     }
 
     fun getZLocation(): Float {

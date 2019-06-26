@@ -14,8 +14,8 @@ import androiddesk.com.txke_demo.util.UiUtils
  * @author: lll
  * @date: 2019-04-23
  */
-class CameraView @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defTypeAttr: Int = 0)
-    : View(context, attributeSet, defTypeAttr) {
+class CameraView @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defTypeAttr: Int = 0) :
+    View(context, attributeSet, defTypeAttr) {
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
