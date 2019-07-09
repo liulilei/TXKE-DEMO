@@ -20,13 +20,23 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Hello World!"
             android:background="@color/colorPrimaryDark"
             android:textColor="@android:color/white"
             android:layout_marginStart="12dp"
             app:layout_constraintStart_toEndOf="@+id/textView1"
             app:layout_constraintTop_toTopOf="@+id/textView1"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            app:layout_constraintTop_toTopOf="@id/textView1"
+            app:layout_goneMarginStart="12dp"
+            app:layout_constraintStart_toEndOf="@id/textView2"
+            android:text="asdfa"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
