@@ -30,7 +30,7 @@ class MultiTouchView @JvmOverloads constructor(
 
     private var endOffsetX = 0f
 
-    private var endOffestY = 0f
+    private var endOffsetY = 0f
 
     private var paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
@@ -52,12 +52,12 @@ class MultiTouchView @JvmOverloads constructor(
                 startX = event.getX(0)
                 startY = event.getY(0)
                 endOffsetX = offsetX
-                endOffestY = offsetY
+                endOffsetY = offsetY
             }
             MotionEvent.ACTION_MOVE -> {
                 var currentIndex = event.findPointerIndex(indexPointerId)
                 offsetX = event.getX(currentIndex) - startX + endOffsetX
-                offsetY = event.getY(currentIndex) - startY + endOffestY
+                offsetY = event.getY(currentIndex) - startY + endOffsetY
                 invalidate()
             }
             MotionEvent.ACTION_POINTER_DOWN -> {
@@ -65,7 +65,7 @@ class MultiTouchView @JvmOverloads constructor(
                 startX = event.getX(event.actionIndex)
                 startY = event.getY(event.actionIndex)
                 endOffsetX = offsetX
-                endOffestY = offsetY
+                endOffsetY = offsetY
             }
             MotionEvent.ACTION_POINTER_UP -> {
                 val actionIndex = event.actionIndex
@@ -79,7 +79,7 @@ class MultiTouchView @JvmOverloads constructor(
                     startX = event.getX(index)
                     startY = event.getY(index)
                     endOffsetX = offsetX
-                    endOffestY = offsetY
+                    endOffsetY = offsetY
                 }
             }
         }
