@@ -3,4 +3,12 @@
     <declare-styleable name="MaterialEditText">
         <attr name="use_float_label" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="TextListView">
+        <attr name="text_size" format="dimension" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="point_text_margin" format="dimension" />
+        <attr name="height_space" format="dimension" />
+        <attr name="line_spacing_extra" format="dimension" />
+    </declare-styleable>
 </resources>

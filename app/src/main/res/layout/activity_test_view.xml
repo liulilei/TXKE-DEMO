@@ -1,235 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
 
-    <androiddesk.com.txke_demo.view.MultiTouchView
+    <!--<androiddesk.com.txke_demo.view.MultiTouchView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimaryDark"/>
+            android:background="@color/colorPrimaryDark"/>-->
 
-</LinearLayout>
-        <!--<androiddesk.com.txke_demo.view.TagLayout
+    <androiddesk.com.txke_demo.view.TextListView
+        android:id="@+id/textList"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        app:point_text_margin="8dp"
+        app:text_color="@color/colorPrimaryDark" />
+
+</RelativeLayout><!--<androiddesk.com.txke_demo.view.TagLayout
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">-->
 
-        <!--<ImageView
+    <!--<ImageView
+        android:id="@+id/view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/abc"/>-->
+
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <androiddesk.com.txke_demo.view.MaterialEditText
             android:id="@+id/view"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@mipmap/abc"/>-->
-
-        <!--<FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark">
+            android:hint="UserName"
+            app:use_float_label="true" />
+    </FrameLayout>-->
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </FrameLayout>
+    <!--<androiddesk.com.txke_demo.view.SquareImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/banova"/>
 
-        <FrameLayout
-            android:layout_width="match_parent"
+    <View android:layout_width="300dp"
+          android:layout_height="200dp"
+          android:background="@color/colorPrimaryDark"/>-->
+
+    <!--<androiddesk.com.txke_demo.view.CircleMeasureView
+            android:background="@android:color/black"
+            android:layout_width="200dp"
+            android:layout_height="300dp"/>-->
+
+    <!--<androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
+            android:text="北京市" />
 
-            <androiddesk.com.txke_demo.view.MaterialEditText
-                android:id="@+id/view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="UserName"
-                app:use_float_label="true" />
-        </FrameLayout>-->
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天津市" />
 
-        <!--<androiddesk.com.txke_demo.view.SquareImageView
-                android:layout_width="400dp"
-                android:layout_height="200dp"
-                android:src="@mipmap/banova"/>
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海市" />
 
-        <View android:layout_width="300dp"
-              android:layout_height="200dp"
-              android:background="@color/colorPrimaryDark"/>-->
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重庆市" />
 
-        <!--<androiddesk.com.txke_demo.view.CircleMeasureView
-                android:background="@android:color/black"
-                android:layout_width="200dp"
-                android:layout_height="300dp"/>-->
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="河北省" />
 
-        <!--<androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="北京市" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="山西省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="天津市" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="辽宁省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="上海市" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吉林省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="重庆市" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黑龙江省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="河北省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="江苏省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="山西省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浙江省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="辽宁省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安徽省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="吉林省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="福建省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="黑龙江省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="江西省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="江苏省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="山东省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="浙江省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="河南省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="安徽省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湖北省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="福建省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湖南省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="江西省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广东省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="山东省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="海南省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="河南省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="四川省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="湖北省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贵州省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="湖南省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="云南省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="广东省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陕西省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="海南省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="甘肃省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="四川省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="青海省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="贵州省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="台湾省" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="云南省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内蒙古自治区" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="陕西省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广西壮族自治区" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="甘肃省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="西藏自治区" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="青海省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宁夏回族自治区" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="台湾省" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新疆维吾尔自治区" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="内蒙古自治区" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="香港特别行政区" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="广西壮族自治区" />
+    <androiddesk.com.txke_demo.view.ColoredTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="澳门特别行政区" />
 
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="西藏自治区" />
-
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="宁夏回族自治区" />
-
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="新疆维吾尔自治区" />
-
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="香港特别行政区" />
-
-        <androiddesk.com.txke_demo.view.ColoredTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="澳门特别行政区" />
-
-    </androiddesk.com.txke_demo.view.TagLayout>-->
+</androiddesk.com.txke_demo.view.TagLayout>-->

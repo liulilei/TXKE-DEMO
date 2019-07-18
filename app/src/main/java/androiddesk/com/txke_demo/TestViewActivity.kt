@@ -4,6 +4,7 @@ import android.animation.TypeEvaluator
 import android.graphics.PointF
 import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
+import kotlinx.android.synthetic.main.activity_test_view.*
 
 /**
  *@Description:
@@ -15,6 +16,11 @@ class TestViewActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test_view)
+
+        val list = arrayListOf("蓝卡队解放路卡机是伐啦时代峰峻蓝卡队解放路卡机是伐啦时代峰峻蓝卡队解放路卡机是伐啦时代峰峻蓝卡队解放路卡机是伐啦时代峰峻",
+                "蓝卡队解放路卡机是伐啦时代峰峻蓝卡队解放路卡机是伐啦时代峰峻蓝卡队解放路卡机是伐啦时代峰峻蓝卡队解放路卡机是伐啦时代峰峻",
+                "蓝卡队解放路卡机是伐啦时代峰峻蓝卡队解放路卡机是伐啦时代峰峻蓝卡队解放路卡机是伐啦时代峰峻")
+        textList.setTextList(list)
 
 //        view.setUseFloatLabel(false)
 
