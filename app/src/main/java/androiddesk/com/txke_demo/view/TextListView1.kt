@@ -18,7 +18,7 @@ import androidx.core.view.marginTop
  * @author: lll
  * @date: 2019-07-18
  */
-class TextListView @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr: Int = 0)
+class TextListView1 @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr: Int = 0)
     : View(context, attributeSet, defStyleAttr) {
 
     private var listText = arrayListOf<String>()
